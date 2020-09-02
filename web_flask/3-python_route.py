@@ -22,9 +22,8 @@ def c_route(text):
 
 
 @app.route('/python', defaults={'text': "is cool"}, strict_slashes=False)
-@app.route('/python/<text>', strict_slashes=False)
 def python_route(text):
-    return 'C {}'.format(text.replace('_', ' '))
+    return 'C {}'.format(str(text).replace('_', ' '))
 
 if __name__ == "__main__":
     app.run("0.0.0.0", 5000)
