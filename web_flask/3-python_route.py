@@ -21,7 +21,7 @@ def c_route(text):
     return 'C {}'.format(text.replace('_', ' '))
 
 
-@app.route('/python/<text>', strict_slashes=False)
+@app.route('/python/<text="is cool">', strict_slashes=False)
 def python_route(text):
     return 'C {}'.format(text.replace('_', ' '))
 
