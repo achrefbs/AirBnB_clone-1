@@ -10,3 +10,5 @@
 - a script that starts a Flask web application
 # task 5:
 - a script that starts a Flask web application
+# task 6:
+- a script that starts a Flask web application
